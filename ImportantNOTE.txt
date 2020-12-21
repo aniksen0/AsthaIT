@@ -1,0 +1,7 @@
+Q:Problem with align center vertically horizontally?
+A: use align self center in col div / and then text center to the next div.
+
+Q::To make the content in center?
+A: Use justify-content-center (used in copyright)
+
+Q:
