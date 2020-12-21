@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3bb5f4a-bbfb-4c61-b16a-bd6b689fce33" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Home.html" afterPath="$PROJECT_DIR$/Home.html" />
-    </list>
+    <list default="true" id="d3bb5f4a-bbfb-4c61-b16a-bd6b689fce33" name="Default" comment="" />
     <ignored path="InternHomePage.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -218,15 +215,15 @@
       <workItem from="1608226137807" duration="12306000" />
       <workItem from="1608392710210" duration="6478000" />
       <workItem from="1608529177421" duration="2034000" />
-      <workItem from="1608557837459" duration="10471000" />
+      <workItem from="1608557837459" duration="10578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31289000" />
+    <option name="totallyTimeSpent" value="31396000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11388889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
