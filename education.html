@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astha IT Solution</title>
+    <link href="css/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark  navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="reset" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo-removebg-preview.png" alt="Logo" height="50" width="50"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link " href="Home.html"><span class="fa fa-home "></span> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info"></span> Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#software"><span class="fa fa-list "></span> Software</a></li>
+                <li class="nav-item "><a class="nav-link" href="#contact"><span class="fa fa-address-card "></span> Contact</a></li>
+                <li class="nav-item"><a class="nav-link " href="#"><span class="fas fa-road"></span> IT Training</a></li>
+                <li class="nav-item"><a class="nav-link active " href="#"><span class="fas fa-graduation-cap "></span> Education</a></li>
+            </ul>
+            <span class="navbar-text" id="myBtn">
+                <a href="#">
+                    <span class="fas fa-sign"></span> Login
+                </a>
+            </span>
+
+
+        </div>
+    </div>
+</nav>
+<!--login modal-->
+<div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox">
+                                <label class="form-check-label text-dark"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                    </div>
+                </form>
+            </div>
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+</div>
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row align-items-center row-header">
+            <div class="col-12 col-sm-5">
+                <h1>Our Courses</h1>
+                <p class="d-sm-block d-none">See Our Course list-> </p>
+            </div>
+            <div>
+            </div>
+            <!--<div class="col-12 col-sm-5 align-self-center">-->
+                <!--<img src="img/logo-removebg-preview.png" alt="Logo" height="170" width="150">-->
+            <!--</div>-->
+            <!--<div class="col-sm-2 justify-content-center" >-->
+                <!--<button type="button" class=" col-12 btn btn-warning" id="registration">Registration</button>-->
+            <!--</div>-->
+        </div>
+    </div>
+</header>
+<!--Main Content HERE-->
+<div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
+        <div class="container-fluid d-flex"> <a class="navbar-brand" href="#">Courses</a>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-laptop-code"></i><span class="d-sm-block d-none">Basic Computer Course</span></a> </li>
+                <li class="nav-item" role="presentation"> <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="far fa-file-code"></i><span class="d-sm-block d-none">Programming Course</span></a> </li>
+                <li class="nav-item" role="presentation"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-crop"></i><span class="d-sm-block d-none">Web Development</span></a> </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid mt-2 mb-5">
+    <div class="products">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="d-flex justify-content-between p-3 bg-white mb-3 align-items-center "> <span class="font-weight-bold text-uppercase">Basic Computer Courses</span>
+                    <div> <img src="https://img.icons8.com/windows/100/000000/list.png" width="30" /> <img src="https://img.icons8.com/ios-filled/100/000000/squared-menu.png" width="25" /> </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content17.png" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">মাইক্রোসফ্ট এক্সেল</span> <span class="font-weight-bold">TK.12000</span> </div>
+                                <p class="card-text mb-1 mt-1">মাইক্রোসফ্ট এক্সেলের বুনিয়াদি ধারণা তৈরি করুন.</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content18.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">নতুনদের জন্য কম্পিউটার ফান্ডামেন্টাল</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">কম্পিউটারের মূল ধারণাগুলি যেমন কম্পিউটার, কম্পিউটারের ধরণ, মেমরি ইউনিট এবং এই জাতীয় কোর্স শেখানো হবে</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content3.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">Microsof Office</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">কম্পিউটারের মূল ধারণাগুলি যেমন কম্পিউটার, কম্পিউটারের ধরণ, মেমরি ইউনিট এবং এই জাতীয় কোর্স শেখানো হবে</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">আই. সি. টি. কোর্স</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">তথ্য ও যোগাযোগ প্রযুক্তি (আইসিটি) শিল্প কী তা জানুন।</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <!--Chairs-->
+                <div class="d-flex justify-content-between p-3 bg-white mb-3 align-items-center"> <span class="font-weight-bold text-uppercase">Programming Courses</span>
+                    <div> <img src="https://img.icons8.com/windows/100/000000/list.png" width="30" /> <img src="https://img.icons8.com/ios-filled/100/000000/squared-menu.png" width="25" /> </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content2.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">সি প্রোগ্রামিং</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">এই ডিপ্লোমা প্রোগ্রামে সি প্রোগ্রামিং ভাষার মূল ধারণাগুলি এবং বৈশিষ্ট্যগুলি আরও ভাল ধারণা অর্জন করুন</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">add to wishlist</button> <button class="btn btn-dark">Add to cart</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content5.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">সি # প্রোগ্রামিং</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">সি # প্রোগ্রামিং এর এই কোর্সের সাহায্যে মাইক্রোসফ্টের ভিজ্যুয়াল স্টুডিও এক্সপ্রেস ব্যবহার করে প্রোগ্রামটি শিখুন</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content9.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">নতুনদের জন্য জাভা প্রোগ্রামিং</span> <span class="font-weight-bold">$500</span> </div>
+                                <p class="card-text mb-1 mt-1">এই প্রোগ্রামিং কোর্সে প্রাথমিক জাভা ধারণা এবং নতুনদের জন্য প্রাথমিক প্রোগ্রামিং কৌশল রয়েছে</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span></div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">add to wishlist</button> <button class="btn btn-dark">Add to cart</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content18.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">পাইথন প্রোগ্রামিং </span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">পাইথন প্রোগ্রামিংয়ের সর্বাধিক গুরুত্বপূর্ণ উপাদানগুলি শিখুন এবং কীভাবে পাইথন কোডের মধ্যে ত্রুটিগুলি পড়তে এবং স্পট করতে হয় তা আবিষ্কার করুন।</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content18.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">পাইথন প্রোগ্রামিং </span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">পাইথন প্রোগ্রামিংয়ের সর্বাধিক গুরুত্বপূর্ণ উপাদানগুলি শিখুন এবং কীভাবে পাইথন কোডের মধ্যে ত্রুটিগুলি পড়তে এবং স্পট করতে হয় তা আবিষ্কার করুন।</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content18.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">পাইথন প্রোগ্রামিং </span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">পাইথন প্রোগ্রামিংয়ের সর্বাধিক গুরুত্বপূর্ণ উপাদানগুলি শিখুন এবং কীভাবে পাইথন কোডের মধ্যে ত্রুটিগুলি পড়তে এবং স্পট করতে হয় তা আবিষ্কার করুন।</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <!--Dining-->
+                <div class="d-flex justify-content-between p-3 bg-white mb-3 align-items-center"> <span class="font-weight-bold text-uppercase">Development Courses</span>
+                    <div> <img src="https://img.icons8.com/windows/100/000000/list.png" width="30" /> <img src="https://img.icons8.com/ios-filled/100/000000/squared-menu.png" width="25" /> </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content10.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">এইচটিএমএল ৫, সিএসএস ৩ এবং জাভাস্ক্রিপ্টে ডিপ্লোমা </span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">এই ওয়েব প্রোগ্রামিং কোর্সে এইচটি.এম.এল ৫, সি.এস.এস ৩ এবং জাভাস্ক্রিপ্ট ব্যবহার করে ইন্টারেক্টিভ ওয়েব পেইজ তৈরি করা শিখতে পারবেন সহজেই</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content11.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">এইচটিএমএল ৫, সিএসএস ৩ এবং জাভাস্ক্রিপ্টে ডিপ্লোমা </span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">এই ওয়েব প্রোগ্রামিং কোর্সে এইচটি.এম.এল ৫, সি.এস.এস ৩ এবং জাভাস্ক্রিপ্ট ব্যবহার করে ইন্টারেক্টিভ ওয়েব পেইজ তৈরি করা শিখতে পারবেন সহজেই</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">Enroll</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content12.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">জ্যাঙ্গো এবং অ্যাঙ্গুলারজেএস এর সাহায্যে ওয়েব তৈরি</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">জ্যাঙ্গো এবং অ্যাঙ্গুলারজেএস ব্যবহার করে কীভাবে ওয়েব অ্যাপ্লিকেশন তৈরি করবেন তা শিখুন। জ্যাঙ্গো এবং অ্যাঙ্গুলারজেএস ওয়েব তৈরিের জন্য উভয়ই খুব জনপ্রিয় ফ্রেমওয়ার্ক</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">ENROLL</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content13.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">পিএইচপি এবং মাইএসকিউএল এর সাহায্যে ওয়েব তৈরি</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">পেশাদার হিসাবে পেশাদার ওয়েব ডাটাবেস অ্যাপ্লিকেশন তৈরি করতে সক্ষম হবেন। বিশ্বজুড়ে ওয়েব তৈরিকারীরা সাধারণ উদ্দেশ্যে স্ক্রিপ্টিং ভাষা হিসাবে পিএইচপি ব্যবহার করে থাকেন।</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">ENROLL</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content15.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">লারাভেল এর সাহায্যে উন্নত ওয়েব তৈরি</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">লারাভেল 6.x কার্যকরভাবে শিখুন এবং বাস্তব বিশ্বের প্রকল্পগুলি তৈরি করুন।</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">ENROLL</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card"> <img src="img/content16.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"> <span class="font-weight-bold">রিএ্যাক্ট নেটিভ এর সাহায্যে মোবাইল অ্যাপ্লিকেশন তৈরি</span> <span class="font-weight-bold">TK.16000</span> </div>
+                                <p class="card-text mb-1 mt-1">মাত্র একটি ভাষা দিয়ে অ্যান্ড্রয়েড এবং আইওএসের জন্য নেটিভ মোবাইল অ্যাপ্লিকেশনগুলি তৈরি করুন</p>
+                                <div class="d-flex align-items-center flex-row"> <i class="far fa-calendar-alt"></i> <span class="guarantee">10 Sep - 16 Apr 2021</span> <span class="guarantee"><i class="fas fa-clock"></i>Total Hours: 56</span> </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="text-right buttons"> <button class="btn btn-outline-dark">Wishlist</button> <button class="btn btn-dark">ENROLL</button> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Main content end here-->
+<footer class="footer bg-light">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-sm-4 col-5 ">
+                <h5>Corporate Office:</h5>
+
+                Chand Nagar, (Near Tulsiram girl school),
+                Saidpur, Nilphamari, Bangladesh.
+            </div>
+            <div class="col-7 col-sm-4 align-self-center">
+                <h5>Branch Office:</h5>
+                <address>
+
+                    26 A, Shahera Tropical Center (6th Floor)<br>
+                    218 Elephant Road, Dhaka-1205<br>
+                    Email: <a href="mailto:admin@boniksoft.com">admin@boniksoft.com</a><br>
+                    E-mail: <a href="mailto:info@boniksoft.com">info@boniksoft.com</a>
+
+
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div class="text-center">
+                    <a href="http://google.com/+" class="btn btn-social-icon btn-danger"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="http://www.facebook.com/profile.php?id=" class="btn btn-social-icon btn-success"><i class="fab fa-facebook-f"></i> </a>
+                    <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-info"> <i class="fab fa-linkedin-in"> </i> </a>
+                    <a href="http://twitter.com/" class="btn btn-social-icon btn-info"><i class="fab fa-twitter"> </i> </a>
+
+                    <a href="mailto:mailto:info@boniksoft.com" class="btn-info btn btn-social"> <i class="fas fa-envelope-open-text"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2020 Astha IT Solutions</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="css/fontawesome-free-5.15.1-web/js/all.js"></script>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#login").modal();
+        });
+    });
+</script>
+</body>
+</html>
